@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "unstable-ultimate",
+  "version": "${version}",
+  "name": "Unstable Ultimate",
+  "description": "Unstable SMP kits, armor trims, shield banner gallery, /dobuild Farlands arena, tiered /bot PvP AI, and Cosmetica skin/cape switcher.",
+  "authors": ["Unstable Ultimate"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.unstable.ultimate.UnstableUltimateMod"],
+    "client": ["com.unstable.ultimate.UnstableUltimateClient"]
+  },
+  "mixins": [
+    "unstable_ultimate.client.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.10",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
